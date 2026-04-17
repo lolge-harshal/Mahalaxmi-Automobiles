@@ -12,7 +12,7 @@ import './index.css'
 const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
-            staleTime: 1000 * 60 * 5,   // 5 min — don't refetch if data is fresh
+            staleTime: 1000 * 60 * 5,   // 5 min — don't refetch if data is fresh gg
             gcTime: 1000 * 60 * 10,  // 10 min — keep unused data in cache
             retry: 1,               // one retry on failure
             refetchOnWindowFocus: false,         // avoid surprise refetches on tab switch
